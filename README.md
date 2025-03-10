@@ -1,12 +1,12 @@
-# FaceShot: Bring Any Character into Life
-[**FaceShot: Bring Any Character into Life**](https://arxiv.org/abs/)
+# [ICLR 2025] FaceShot: Bring Any Character into Life
+[**FaceShot: Bring Any Character into Life**](https://arxiv.org/abs/2503.00740)
 
 [Junyao Gao](https://jeoyal.github.io/home/), [Yanan Sun](https://scholar.google.com/citations?hl=zh-CN&user=6TA1oPkAAAAJ)<sup>&Dagger; *</sup>, [Fei Shen](https://muzishen.github.io/), [Xin Jiang](https://whitejiang.github.io/), [Zhening Xing](https://scholar.google.com/citations?user=sVYO0GYAAAAJ&hl=en), [Kai Chen*](https://chenkai.site/), [Cairong Zhao*](https://vill-lab.github.io/)
 
 (* corresponding authors, <sup>&Dagger;</sup> project leader)
 
- <a href='https://arxiv.org/abs/2407.01414'><img src='https://img.shields.io/badge/arXiv-2407.01414-b31b1b.svg'></a> 
- <a href='https://styleshot.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> 
+ <a href='https://www.arxiv.org/abs/2503.00740'><img src='https://img.shields.io/badge/arXiv-2503.00740-b31b1b.svg'></a> 
+ <a href='https://faceshot2024.github.io/faceshot/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> 
 
 Bringing characters like Teddy Bear into life requires a bit of *magic*. **FaceShot** makes this *magic* a reality by introducing a training-free portrait animation framework which can animate
 any character from any driven video, especially for non-human characters, such as emojis and toys.
@@ -16,7 +16,7 @@ any character from any driven video, especially for non-human characters, such a
 <img src="__assets__/teaser.gif">
 
 ## News
-- [2025/1/23] 🔥 We release the code, [project page](https://styleshot.github.io/) and [paper](https://arxiv.org/abs/2407.01414).
+- [2025/1/23] 🔥 We release the code, [project page](https://faceshot2024.github.io/faceshot/) and [paper](https://www.arxiv.org/abs/2503.00740).
 
 ## TODO List
 - [ ] Preprocessing script for pre-store target images and appearance gallery.
@@ -87,7 +87,7 @@ any character from any driven video, especially for non-human characters, such a
 </table>
 
 <div align="center">
-Check the gallery of our <a href='https://styleshot.github.io/' target='_blank'>project page</a> for more visual results!
+Check the gallery of our <a href='https://faceshot2024.github.io/faceshot/' target='_blank'>project page</a> for more visual results!
 </div>
 
 ## Get Started
@@ -113,7 +113,7 @@ pip install "git+https://github.com/XPixelGroup/BasicSR.git"
 
 #### Downloading Checkpoints
 
-1. Download the checkpoint of CMP from [here](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/resolve/main/models/cmp/experiments/semiauto_annot/resnet50_vip%2Bmpii_liteflow/checkpoints/ckpt_iter_42000.pth.tar) and put it into `./models/cmp/experiments/semiauto_annot/resnet50_vip+mpii_liteflow/checkpoints`.
+1. Download the checkpoint of CMP from [MOFA-Video](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/resolve/main/models/cmp/experiments/semiauto_annot/resnet50_vip%2Bmpii_liteflow/checkpoints/ckpt_iter_42000.pth.tar) and put it into `./models/cmp/experiments/semiauto_annot/resnet50_vip+mpii_liteflow/checkpoints`.
 
 2. Download the `ckpts` [folder](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts) from the huggingface repo which contains necessary pretrained checkpoints and put it under `./ckpts`. You may use `git lfs` to download the **entire** `ckpts` folder.
 
@@ -131,10 +131,10 @@ All assets and code are under the [license](./LICENSE) unless specified otherwis
 
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 ```
-@article{gao2024faceshot,
+@article{gao2025faceshot,
   title={FaceShot: Bring Any Character into Life},
-  author={Gao, Junyao and Sun, Yanan and Shen, Fei and Xin, Jiang and Xing, Zhening and Chen, Kai and Zhao, Cairong},
-  journal={arXiv preprint},
+  author={Gao, Junyao and Sun, Yanan and Shen, Fei and Jiang, Xin and Xing, Zhening and Chen, Kai and Zhao, Cairong},
+  journal={arXiv preprint arXiv:2503.00740},
   year={2025}
 }
 ```
