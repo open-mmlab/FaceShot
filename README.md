@@ -1,5 +1,5 @@
-# FaceShot: Bring Any Character into Life
-[**[ICLR 2025]FaceShot: Bring Any Character into Life**](https://arxiv.org/abs/2503.00740)
+# [ICLR 2025] FaceShot: Bring Any Character into Life
+[**FaceShot: Bring Any Character into Life**](https://arxiv.org/abs/2503.00740)
 
 [Junyao Gao](https://jeoyal.github.io/home/), [Yanan Sun](https://scholar.google.com/citations?hl=zh-CN&user=6TA1oPkAAAAJ)<sup>&Dagger; *</sup>, [Fei Shen](https://muzishen.github.io/), [Xin Jiang](https://whitejiang.github.io/), [Zhening Xing](https://scholar.google.com/citations?user=sVYO0GYAAAAJ&hl=en), [Kai Chen*](https://chenkai.site/), [Cairong Zhao*](https://vill-lab.github.io/)
 
