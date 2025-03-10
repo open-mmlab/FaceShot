@@ -87,7 +87,7 @@ any character from any driven video, especially for non-human characters, such a
 </table>
 
 <div align="center">
-Check the gallery of our <a href='https://styleshot.github.io/' target='_blank'>project page</a> for more visual results!
+Check the gallery of our <a href='https://faceshot2024.github.io/faceshot/' target='_blank'>project page</a> for more visual results!
 </div>
 
 ## Get Started
