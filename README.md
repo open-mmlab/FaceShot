@@ -117,7 +117,14 @@ pip install "git+https://github.com/XPixelGroup/BasicSR.git"
 
 2. Download the `ckpts` [folder](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts) from the huggingface repo which contains necessary pretrained checkpoints and put it under `./ckpts`. You may use `git lfs` to download the **entire** `ckpts` folder.
 
-    
+#### Building Appearance Gallery
+You can download pre-stored domain features from [here](https://huggingface.co/Gaojunyao/FaceShot/tree/main), or create your own appearance gallery by following these steps:
+
+1. Place character images for a specific domain into `./characters/images/xx/`, where xx represents the domain index. 
+
+2. Run `python annotation.py` to annotate landmarks for the characters. Please note that for non-human characters, manual annotation is required. The landmarks will be saved in `./characters/points/xx/`.
+
+3. Run `python process_features.py` to extract CLIP and diffusion features for each domain. The features will be saved in `./target_domains/`.
 
 #### Running Inference Scripts
 
