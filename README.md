@@ -16,6 +16,8 @@ any character from any driven video, especially for non-human characters, such a
 <img src="__assets__/teaser.gif">
 
 ## News
+- [2025/6/26] 🔥 We release the preprocessing scripts for pre-store target images and the appearance gallery.
+- [2025/1/23] 🔥 FaceShot will be appeared in ICLR 2025!
 - [2025/1/23] 🔥 We release the code, [project page](https://faceshot2024.github.io/faceshot/) and [paper](https://www.arxiv.org/abs/2503.00740).
 
 ## TODO List
