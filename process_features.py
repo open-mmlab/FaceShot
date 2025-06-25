@@ -126,10 +126,10 @@ if __name__ == "__main__":
             ft.append(dift.forward(ref_img_tensor,
                                    prompt=prompt))
         diff_features = Inference(ft, img_size, ref_positions)
-        
-        save_dir = os.path.join(target_dir, domain)
-        os.makedirs(save_dir, exist_ok=True)
+     
         for part, idx in part_idx.items():
+            save_dir = os.path.join(target_dir, part, domain)
+            os.makedirs(save_dir, exist_ok=True)
             part_diff = diff_features[idx[0]:idx[1]]
             part_clip = torch.mean(torch.cat(clip_features[part]), dim=0, keepdim=True)
             torch.save(part_diff, os.path.join(save_dir, "diff_feature.pt"))
