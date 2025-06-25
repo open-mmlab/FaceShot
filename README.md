@@ -19,8 +19,8 @@ any character from any driven video, especially for non-human characters, such a
 - [2025/1/23] 🔥 We release the code, [project page](https://faceshot2024.github.io/faceshot/) and [paper](https://www.arxiv.org/abs/2503.00740).
 
 ## TODO List
-- [ ] Preprocessing script for pre-store target images and appearance gallery.
-- [ ] Appearance gallery.
+- [x] (2025.06.26) Preprocessing script for pre-store target images and appearance gallery.
+- [x] (2025.06.26) Appearance gallery.
 - [ ] Gradio demo.
 
 ## Gallery
