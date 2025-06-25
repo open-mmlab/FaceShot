@@ -111,13 +111,13 @@ pip install "git+https://github.com/XPixelGroup/BasicSR.git"
 
 ```
 
-#### Downloading Checkpoints
+### Downloading Checkpoints
 
 1. Download the checkpoint of CMP from [MOFA-Video](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/resolve/main/models/cmp/experiments/semiauto_annot/resnet50_vip%2Bmpii_liteflow/checkpoints/ckpt_iter_42000.pth.tar) and put it into `./models/cmp/experiments/semiauto_annot/resnet50_vip+mpii_liteflow/checkpoints`.
 
 2. Download the `ckpts` [folder](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts) from the huggingface repo which contains necessary pretrained checkpoints and put it under `./ckpts`. You may use `git lfs` to download the **entire** `ckpts` folder.
 
-#### Building Appearance Gallery
+### Building Appearance Gallery
 You can download pre-stored domain features from [here](https://huggingface.co/Gaojunyao/FaceShot/tree/main), or create your own appearance gallery by following these steps:
 
 1. Place character images for a specific domain into `./characters/images/xx/`, where xx represents the domain index. 
@@ -126,7 +126,7 @@ You can download pre-stored domain features from [here](https://huggingface.co/G
 
 3. Run `python process_features.py` to extract CLIP and diffusion features for each domain. The features will be saved in `./target_domains/`.
 
-#### Running Inference Scripts
+### Running Inference Scripts
 
 ```
 chmod 777 inference.sh
