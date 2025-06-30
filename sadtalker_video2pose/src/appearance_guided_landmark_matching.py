@@ -164,7 +164,7 @@ def Appearance_Matching(img_path, img_size):
     model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-VL-Chat", device_map="cuda", trust_remote_code=True).eval()
     model.generation_config = GenerationConfig.from_pretrained("Qwen/Qwen-VL-Chat", trust_remote_code=True)
     
-    prompts = {"face_boundary": "完整框出图中面部轮廓的位置,请确保你的输出只有一个box", "eye_brows": "完整框出图中眉毛的位置,请确保你的输出只有一个box", "nose": "完整框出图中鼻子的位置,请确保你的输出只有一个box", "eyes": "用一个框完整框出图中两只眼睛的位置,请确保你的输出只有一个box", "mouth": "完整框出图中嘴巴的位置,请确保你的输出只有一个box"}
+    prompts = {"face_boundary": "完整框出图中脸的下半部分,要求只包含半个鼻子,请确保你的输出只有一个box", "eye_brows": "完整框出图中眉毛的位置,请确保你的输出只有一个box", "nose": "完整框出图中鼻子的位置,请确保你的输出只有一个box", "eyes": "用一个框完整框出图中两只眼睛的位置,请确保你的输出只有一个box", "mouth": "完整框出图中嘴巴的位置,请确保你的输出只有一个box"}
     
     image_encoder_path = "ckpts/ip-adapter/laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
     image_encoder = CLIPVisionModelWithProjection.from_pretrained(image_encoder_path).to(

@@ -16,11 +16,13 @@ any character from any driven video, especially for non-human characters, such a
 <img src="__assets__/teaser.gif">
 
 ## News
+- [2025/6/26] 🔥 We release the preprocessing scripts for pre-store target images and the appearance gallery.
+- [2025/1/23] 🔥 FaceShot will be appeared in ICLR 2025!
 - [2025/1/23] 🔥 We release the code, [project page](https://faceshot2024.github.io/faceshot/) and [paper](https://www.arxiv.org/abs/2503.00740).
 
 ## TODO List
-- [ ] Preprocessing script for pre-store target images and appearance gallery.
-- [ ] Appearance gallery.
+- [x] (2025.06.26) Preprocessing script for pre-store target images and appearance gallery.
+- [x] (2025.06.26) Appearance gallery.
 - [ ] Gradio demo.
 
 ## Gallery
@@ -111,15 +113,22 @@ pip install "git+https://github.com/XPixelGroup/BasicSR.git"
 
 ```
 
-#### Downloading Checkpoints
+### Downloading Checkpoints
 
 1. Download the checkpoint of CMP from [MOFA-Video](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/resolve/main/models/cmp/experiments/semiauto_annot/resnet50_vip%2Bmpii_liteflow/checkpoints/ckpt_iter_42000.pth.tar) and put it into `./models/cmp/experiments/semiauto_annot/resnet50_vip+mpii_liteflow/checkpoints`.
 
 2. Download the `ckpts` [folder](https://huggingface.co/MyNiuuu/MOFA-Video-Hybrid/tree/main/ckpts) from the huggingface repo which contains necessary pretrained checkpoints and put it under `./ckpts`. You may use `git lfs` to download the **entire** `ckpts` folder.
 
-    
+### Building Appearance Gallery
+You can download pre-stored domain features from [here](https://huggingface.co/Gaojunyao/FaceShot/tree/main), or create your own appearance gallery by following these steps:
 
-#### Running Inference Scripts
+1. Place character images for a specific domain into `./characters/images/xx/`, where xx represents the domain index. 
+
+2. Run `python annotation.py` to annotate landmarks for the characters. Please note that for non-human characters, manual annotation is required. The landmarks will be saved in `./characters/points/xx/`.
+
+3. Run `python process_features.py` to extract CLIP and diffusion features for each domain. The features will be saved in `./target_domains/`.
+
+### Running Inference Scripts
 
 ```
 chmod 777 inference.sh
