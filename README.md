@@ -94,7 +94,7 @@ Check the gallery of our <a href='https://faceshot2024.github.io/faceshot/' targ
 ### Clone the Repository
 
 ```
-git clone https://github.com/Jeoyal/FaceShot.git
+git clone https://github.com/open-mmlab/FaceShot.git
 cd ./FaceShot
 ```
 
